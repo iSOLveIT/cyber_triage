@@ -1,0 +1,4 @@
+.. _GR:
+
+Generating Reports
+==================
