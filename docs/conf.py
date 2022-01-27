@@ -19,9 +19,10 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'Cyber Triage'
-copyright = '2022, Austin'
-author = 'Austin'
-version = '3.0.2'
+copyright = '2022, Basis Technology'
+author = 'Basis Technology'
+version = '3.0'
+release = '3.0.2'
 
 
 # -- General configuration ---------------------------------------------------
@@ -29,8 +30,7 @@ version = '3.0.2'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-]
+extensions = []
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -49,6 +49,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_title = 'Cyber Triage'
+html_logo = './_static/img/basis_tech.jpg'
 
 file_insertion_enabled = True
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -57,11 +58,13 @@ file_insertion_enabled = True
 html_static_path = ['_static']
 
 html_show_sphinx = False  # shows sphinx footer link
-html_show_sourcelink = False  # shows link to rst file that generates page
+html_show_sourcelink = True  # shows link to rst file that generates page
 
 rst_epilog = """
 
-.. |Cy_triage| replace:: Cyber Triage\ :sup:`®`
+.. |cyTriage| replace:: Cyber Triage\ :sup:`®`
+
+.. |basisTech| replace:: Basis Technology\ :sup:`®`
 
 .. |br| raw:: html 
 
@@ -74,3 +77,7 @@ html_last_updated_fmt = '%b %d, %Y'
 # tablecaption = 'below'
 
 pygments_style = 'sphinx'
+
+# PDF output
+latex_engine = 'pdflatex'
+latex_logo = './_static/img/cyber_triage.jpg'
