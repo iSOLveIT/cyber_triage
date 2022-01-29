@@ -1,4 +1,4 @@
-.. _UPGRADE:
+.. _SPRT:
 
-Upgrading from v2 to v3
-=======================
+Support
+=======

@@ -24,19 +24,27 @@
 Cyber Triage User's Guide
 #########################
 
-This user guide contains all information about how to install and use the |cyTriage| software. 
+|cyTriage| is incident response software that enables IT and information security incident responders to collect, analyze, and act more quickly when a threat has been identified.
+With |cyTriage| the user can analyze a computer to determine whether or not it was compromised. |br|
 
-* :ref:`Overview <OW>`
-* :ref:`Standard Installation <SI>`
-* :ref:`Collecting Data From Remote Host <CDRH>`
-* :ref:`Analyzing The Session Data <ASD>`
-* :ref:`Generating Reports <GR>`
-* :ref:`Advanced Topics <AT>`
-* :ref:`Configuring Remote Systems for Collection <CRSC>`
-* :ref:`Configuring a Team Environment <CTE>`
-* :ref:`Upgrading from v2 to v3 <UPGRADE>`
-* :ref:`Support <SUPPORT>`
-* :ref:`History <HISTORY>`
+This user guide contains all information about how to install and use the |cyTriage| software. |br|
+
+If you are evaluating |cyTriage| for the first time, refer to the separate Evaluation Guide document for assistance on getting started as quickly as possible. |br|
+
+If you are upgrading from v2 to v3, then refer to :ref:`Section 8 <UPGRADE>` for the key concepts. 
+
+.. topic:: **Contents**
+
+   * :ref:`Standard Installation <SI>`
+   * :ref:`Collecting Data From Remote Host <CDRH>`
+   * :ref:`Analyzing The Session Data <ASD>`
+   * :ref:`Generating Reports <GRT>`
+   * :ref:`Advanced Topics <ADT>`
+   * :ref:`Configuring Remote Systems for Collection <CRSC>`
+   * :ref:`Configuring a Team Environment <CTEAM>`
+   * :ref:`Upgrading from v2 to v3 <UPGRADE>`
+   * :ref:`Support <SPRT>`
+   * :ref:`History <HSTRY>`
   
 
 .. toctree::
@@ -55,12 +63,4 @@ This user guide contains all information about how to install and use the |cyTri
    chapters/chapter_8/index
    chapters/chapter_9/index
    chapters/chapter_10/index
-   chapters/chapter_11/index
 
-
-Indices and tables
-##################
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

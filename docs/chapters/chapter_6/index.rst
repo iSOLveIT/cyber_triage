@@ -1,4 +1,7 @@
-.. _AT:
+.. _CRSC:
 
-Advanced Topics
-===============
+Configuring Remote Systems for Collection
+=========================================
+
+Allow Remote Connections with Local Accounts
+--------------------------------------------

@@ -1,4 +1,4 @@
-.. _GR:
+.. _ADT:
 
-Generating Reports
-==================
+Advanced Topics
+===============

@@ -1,4 +1,4 @@
-.. _SUPPORT:
+.. _HSTRY:
 
-Support
+History
 =======
