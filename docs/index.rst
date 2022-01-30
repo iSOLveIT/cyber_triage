@@ -8,19 +8,6 @@
    :alt: Cyber Triage Logo
    :align: center
 
-
-.. table:: Version Information
-   :widths: auto
-   :align: left
-
-   +---------+--------------+
-   | Version | Date         |
-   +---------+--------------+
-   | 3.0.2   | Nov 30, 2021 |
-   +---------+--------------+
-
-|br|   
-
 Cyber Triage User's Guide
 #########################
 
