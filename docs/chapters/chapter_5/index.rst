@@ -11,27 +11,30 @@ You can still use the |cyTriage| Online File Reputation Service when you are on 
 After the collection has been fully imported, you can package up the file MD5 hashes into a text file. 
     
 * Press the **Details** link on the Dashboard next to the Online File Reputation line. 
-    .. figure:: /_static/img/chapter_5/5_1.jpg
-        :figclass: align-center
-        :class: no-scaled-link
 
-        *Status*
+.. figure:: /_static/img/chapter_5/5_1.jpg
+    :figclass: align-center
+    :class: no-scaled-link
+
+    *Status*
 
 * Choose to **Export Hashes** and pick a folder. 
-    .. figure:: /_static/img/chapter_5/5_2.jpg
-        :figclass: align-center
-        :class: no-scaled-link
 
-        *Offline Analysis*
+.. figure:: /_static/img/chapter_5/5_2.jpg
+    :figclass: align-center
+    :class: no-scaled-link
+
+    *Offline Analysis*
     
 * That will produce a JSON text file with the hashes and license information. 
   
 * You can then copy that file to an Internet-connected computer and upload it to `<https://rep1.cybertriage.com>`_. |br| Copy and paste the text file into that page.
-    .. figure:: /_static/img/chapter_5/5_3.jpg
-        :figclass: align-center
-        :class: no-scaled-link
 
-        *Reputation Service*  
+.. figure:: /_static/img/chapter_5/5_3.jpg
+    :figclass: align-center
+    :class: no-scaled-link
+
+    *Reputation Service*  
 
 * It will download another JSON file that you can then copy back into |cyTriage| and import using the same **Details** panel that you used to export the original set of hashes. 
 
@@ -47,11 +50,12 @@ The steps to do this include:
 1. Download the `NSRL index <https://sourceforge.net/projects/autopsy/files/NSRL/>`_
 2. Unzip the file
 3. Open the |cyTriage| options panel, enable **Use Local NSRL**, and browse to where you unzipped the ``.idx`` file to.
-    .. figure:: /_static/img/chapter_5/5_4.jpg
-        :figclass: align-center
-        :class: no-scaled-link
 
-        *Options (Use Local NSRL)*  
+.. figure:: /_static/img/chapter_5/5_4.jpg
+    :figclass: align-center
+    :class: no-scaled-link
+
+    *Options (Use Local NSRL)*  
 
 Bad Lists
 ---------
