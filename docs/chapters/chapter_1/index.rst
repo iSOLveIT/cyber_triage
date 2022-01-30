@@ -23,7 +23,7 @@ Refer to :ref:`Section 7 <CTEAM>` for Team version requirements.
 Software Requirements
 ---------------------
 
-* :download:`Cyber Triage <https://www.cybertriage.com/download-eval/>` MSI installer.
+* `Cyber Triage <https://www.cybertriage.com/download-eval/>`_ MSI installer.
 * :download:`PSExec 2.2 <https://download.sysinternals.com/files/PSTools.zip>` (or newer) if you want to push the collection tool to remote hosts over the network.
 
 Standard Installation Steps
