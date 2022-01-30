@@ -160,6 +160,7 @@ The following settings should be changed or uncommented (by removing the leading
         synchronous_commit = off
 
 * Uncomment and change the effective cache size based on the amount of RAM available. We recommend the value be 50% of the total RAM.
+    
     .. code-block:: text
 
         effective_cache_size = 16GB 
@@ -241,20 +242,22 @@ When prompted for a license, choose the license file that you received that has 
 When |cyTriage| is open:
 
 1. Open the Options panel and choose the **Deployment Mode** tab. Change the mode to **Team - Server**. If you do not have this option, then you did not supply a Team license key.
-    .. figure:: /_static/img/chapter_7/7_3.jpg
-        :figclass: align-center
-        :class: no-scaled-link
 
-        *Options (Deployment Mode Tab)*
+.. figure:: /_static/img/chapter_7/7_3.jpg
+    :figclass: align-center
+    :class: no-scaled-link
+
+    *Options (Deployment Mode Tab)*
 
 2. In the **Server Password** section, press the **Change Password** button and pick a password that clients will use to connect to the server. You will need the new password when you configure each client, so write it down somewhere safe or make sure you remember it. 
    
 3. In the **Database Setting** section, either keep it as SQLite or enter in the PostgreSQL information by pressing the **View Database Settings** button. Use ``localhost`` as the host if you are running the server on the same system as the server.
-    .. figure:: /_static/img/chapter_7/7_4.jpg
-        :figclass: align-center
-        :class: no-scaled-link
 
-        *PostgreSQL Database Settings*
+.. figure:: /_static/img/chapter_7/7_4.jpg
+    :figclass: align-center
+    :class: no-scaled-link
+
+    *PostgreSQL Database Settings*
 
 4. Press OK and it will restart |cyTriage|. 
 5. When it restarts, your host firewall software may ask permission to open ports. These are required for the server to operate. 
