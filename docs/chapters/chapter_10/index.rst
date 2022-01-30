@@ -70,56 +70,56 @@ The following were added in 2.14.4 (Apr 15, 2021):
 The following were added in 2.14.3 (Mar 1, 2021):
 
 * New Feature:
-  + Temporary S3 Session Tokens can be used.
+   + Temporary S3 Session Tokens can be used.
 
 * Fixes: 
-  + Better deal with corrupt compressed JSONs
-  + Better UI feedback while encrypted JSONs are being checked
-  + Fixed bug that incorrectly reported local login as remote
-  + Fixed bugs with parsing some startup items
-  + Fixed bug with WMI Action heuristics
-  + Fixed Bug showing WMI DB in timeline
-  + Collection tool will use different output folder if run from SysWow (via EDR)
+   + Better deal with corrupt compressed JSONs
+   + Better UI feedback while encrypted JSONs are being checked
+   + Fixed bug that incorrectly reported local login as remote
+   + Fixed bugs with parsing some startup items
+   + Fixed bug with WMI Action heuristics
+   + Fixed Bug showing WMI DB in timeline
+   + Collection tool will use different output folder if run from SysWow (via EDR)
 
 The following were added in 2.14.2 (Jan 25, 2021):
 
 * New Features
-  + DLLs of running processes are collected
-  + Files can be rescanned by new Yara rules and bad lists after initial collection
-  + Updated Volatility for Windows 10 19041 Profile
+   + DLLs of running processes are collected
+   + Files can be rescanned by new Yara rules and bad lists after initial collection
+   + Updated Volatility for Windows 10 19041 Profile
   
 * Fixes
-  + Improved event log parsing performance
-  + Fixed bug that prevented S3 uploads on large JSON files
-  + Allow new version of PsExec (2.3) to be used.
-  + Fix UI refresh issues over RDP
-  + Fixed memory issue with large encrypted JSONs
+   + Improved event log parsing performance
+   + Fixed bug that prevented S3 uploads on large JSON files
+   + Allow new version of PsExec (2.3) to be used.
+   + Fix UI refresh issues over RDP
+   + Fixed memory issue with large encrypted JSONs
 
 The following were added in 2.14.1 (Oct 28, 2020):
 
 * New Features:
-  + S3 Test button uses configured proxy
-  + Collection tool can use proxy for S3 using configuration file
-  + Added CSV and JSONL incident-level reporting
+   + S3 Test button uses configured proxy
+   + Collection tool can use proxy for S3 using configuration file
+   + Added CSV and JSONL incident-level reporting
 
 * Bug Fixes:
-  + Changed JMX to not listen for remote connections and require TLS.
-  + Fixed bug with Team options panel 
-  + Fixed HTML incident-level reporting
+   + Changed JMX to not listen for remote connections and require TLS.
+   + Fixed bug with Team options panel 
+   + Fixed HTML incident-level reporting
 
 The following were added to 2.14.0 (Oct 7, 2020):
 
 * New Features:
-  + Collection Tool output can now be encrypted using AES
-  + Collection Tool output is now compressed when saved to local file
-  + Collection Tool output can be uploaded to S3 bucket
-  + Yara rules are applied to memory images using Volatility
-  + The Event Log Id is displayed in the UI
-  + Session files are no longer deleted after they are imported
-  + When evaluating, a session can be automatically created with evaluation data. 
+   + Collection Tool output can now be encrypted using AES
+   + Collection Tool output is now compressed when saved to local file
+   + Collection Tool output can be uploaded to S3 bucket
+   + Yara rules are applied to memory images using Volatility
+   + The Event Log Id is displayed in the UI
+   + Session files are no longer deleted after they are imported
+   + When evaluating, a session can be automatically created with evaluation data. 
 
 * Bug Fixes:
-  + Faster processing of systems with a large number of user accounts and logins. 
-  + Fixed UI rendering issues from font scaling
-  + Partial files are collected when read errors occur (most often occurs with event logs that use NTFS compression)
+   + Faster processing of systems with a large number of user accounts and logins. 
+   + Fixed UI rendering issues from font scaling
+   + Partial files are collected when read errors occur (most often occurs with event logs that use NTFS compression)
 
