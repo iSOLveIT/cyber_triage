@@ -79,7 +79,7 @@ Inbound Network Ports
    +=========================+====================================+=============================================================+
    | **Protocol**            | **Port(s)**                        | **Usage (Inbound from)**                                    |
    +-------------------------+------------------------------------+-------------------------------------------------------------+
-   | TCP                     | 445\ [#at]_                        | File Sharing / PsExec (Server)                              |
+   | TCP                     | 445                                | File Sharing / PsExec (Server)                              |
    +-------------------------+------------------------------------+-------------------------------------------------------------+
 
 .. table::
@@ -93,11 +93,11 @@ Inbound Network Ports
    +=========================+====================================+=============================================================+
    | **Protocol**            | **Port(s)**                        | **Usage (Inbound from)**                                    |
    +-------------------------+------------------------------------+-------------------------------------------------------------+
-   | TCP                     | 443\ [#at]_                        | Collection Tool (Target / Client)                           |
+   | TCP                     | 443                                | Collection Tool (Target / Client)                           |
    +-------------------------+------------------------------------+-------------------------------------------------------------+
-   | TCP                     | 9443\ [#at]_                       | Rest API (Client)                                           |
+   | TCP                     | 9443                               | Rest API (Client)                                           |
    +-------------------------+------------------------------------+-------------------------------------------------------------+
-   | TCP                     | 61616\ [#at]_                      | ActiveMQ (Client)                                           |
+   | TCP                     | 61616                              | ActiveMQ (Client)                                           |
    +-------------------------+------------------------------------+-------------------------------------------------------------+
 
 .. table::
@@ -111,21 +111,21 @@ Inbound Network Ports
    +=========================+====================================+=============================================================+
    | **Protocol**            | **Port(s)**                        | **Usage (Inbound from)**                                    |
    +-------------------------+------------------------------------+-------------------------------------------------------------+
-   | TCP                     | 5432\ [#at]_                       | Postgres (Server)                                           |
+   | TCP                     | 5432                               | Postgres (Server)                                           |
    +-------------------------+------------------------------------+-------------------------------------------------------------+
 
 
------
+.. note::
 
-.. [#at] The description of each network port:
+   The description of each network port:
 
-    + **TCP 443:** Used to receive connections from the collection tool and Team clients with collected data. You can change this if you have a conflict. 
-    + **TCP 445 (SMB):** File sharing is required for PsExec to work on any target system where “Live Automatic” collection is used. 
-    + **TCP 5432:** PostgreSQL uses this port by default and the Team server must be able to connect to it. 
-    + **TCP 9443:** REST API used with Team clients and SOAR/SIEM integrations. 
-    + **TCP 61616:** ActiveMQ uses this to communicate with the clients.
+   + **TCP 443:** Used to receive connections from the collection tool and Team clients with collected data. You can change this if you have a conflict. 
+   + **TCP 445 (SMB):** File sharing is required for PsExec to work on any target system where **Live Automatic** collection is used. 
+   + **TCP 5432:** PostgreSQL uses this port by default and the Team server must be able to connect to it. 
+   + **TCP 9443:** REST API used with Team clients and SOAR/SIEM integrations. 
+   + **TCP 61616:** ActiveMQ uses this to communicate with the clients.
 
-.. note:: Ports are customizable and any port modifications must be reflected in firewall rules.
+   Ports are customizable and any port modifications must be reflected in firewall rules.
     
 Outgoing Remote Hosts
 ^^^^^^^^^^^^^^^^^^^^^
