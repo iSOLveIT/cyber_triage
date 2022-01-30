@@ -87,7 +87,7 @@ To do this, the following configuration must exist on the remote system:
 *  File and network sharing enabled
 *  Domain account with administrator privileges
 
-   + If you have a local administrator account on the remote system, see the instructions in `Section 6.1 </chapters/chapter_6#allow-remote-connections-with-local-accounts>`_ for configuring it.
+   + If you have a local administrator account on the remote system, see the instructions in :ref:`Section 6.1 <CRSC>` for configuring it.
 
 To perform the collection, select the **Live Automatic** icon. You will be presented with a panel to enter:
 
@@ -108,7 +108,7 @@ Refer to `Section 2.5 <#collection-settings>`_ for details on those panels.
 If this is your first time running the program, you may also be prompted by Windows or a security program to allow |cyTriage| to open a network port. 
 You will need to allow this to happen so that the collection tool can send data to |cyTriage| on TCP port 443. 
 
-See `Section 6.1 </chapters/chapter_6#allow-remote-connections-with-local-accounts>`_ if the administrator account on the remote system is a local account and you are having problems.
+See :ref:`Section 6.1 <CRSC>` if the administrator account on the remote system is a local account and you are having problems.
 
 After the collection has started, you will be able to see the results. Proceed to :ref:`Section 3 <ASD>` for an overview of the analysis techniques.    
 
@@ -162,7 +162,7 @@ To perform a collection, the following are performed on the remote computer:
 
 4. To use the command line interface: 
     a. Open a window that shows the **CyberTriageCLI.exe** executable. Right-click the ``CyberTriageCLI.exe`` file and select **Run as Administrator**. This will start collection of the host.
-    b. Alternatively, you can launch a command prompt with admin privileges and run the **CyberTriageCLI.exe** program with no arguments. |br| If you want to customize what data types are collected, then there are arguments you can give. Run with “—help” to get the list. 
+    b. Alternatively, you can launch a command prompt with admin privileges and run the **CyberTriageCLI.exe** program with no arguments. |br| If you want to customize what data types are collected, then there are arguments you can give. Run with ``—help`` to get the list. 
 
 5. When the collection tool has finished its collection, there will be a directory called ``CyberTriage_<timestamp>`` on the USB device, network share, or S3 bucket. 
 
@@ -422,7 +422,7 @@ You will also be prompted to choose how the files will be analyzed for malware.
 |cyTriage| uses its Online File Reputation Service to analyze files for malware. 
 This service uses ReversingLabs, the NIST NSRL, and other sources to assign a score to each file. 
 
-You need to configure what data is uploaded. See `Section 3.6.1 </chapters/chapter_3#executable-analysis>`_ for details on how these results are used. 
+You need to configure what data is uploaded. See :ref:`Section 3.6.1 <ASD>` for details on how these results are used. 
 
 * **Upload MD5 hashes**: This will send only the MD5 hash of your files to the service. If the service knows that the file content is associated with malware, then it will identify it as such. Note that any minor change to malware will change its MD5 and it will not be flagged as malware using this technique.
 * **Upload file content**: This will send the full file to the service if the SHA1 value was not found. It will be scanned and a result will be returned. The raw content will not be visible to other users, only the analysis results. 
@@ -430,8 +430,8 @@ You need to configure what data is uploaded. See `Section 3.6.1 </chapters/chapt
 
 If you use |cyTriage| on a computer not connected to the Internet, then you have two options:
 
-* You can export hash values and manually submit them to the online file reputation service using a website (see `Section 5.1 </chapters/chapter_5#offline-malware-scanning>`_)
-* You can use a local copy of the NIST NSRL to ignore known files (see `Section 5.1 </chapters/chapter_5#offline-malware-scanning>`_)
+* You can export hash values and manually submit them to the online file reputation service using a website (see :ref:`Section 5.1 <ADT>`)
+* You can use a local copy of the NIST NSRL to ignore known files (see :ref:`Section 5.1 <ADT>`)
 
 Collection Tool Arguments
 -------------------------
