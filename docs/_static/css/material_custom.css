@@ -1,10 +1,10 @@
 /* This file contains custom stylesheet */
 .md-header, .md-tabs{
-    background: #3f51b5!important;
+    background: #021329!important;
 }
 @media only screen and (max-width: 76.1875em){
     nav > label.md-nav__title.md-nav__title--site{
-        background: #3f51b5!important;
+        background: #021329!important;
     }
 }
 .align-center{
@@ -22,10 +22,10 @@ p.centered{
 /* .md-header-nav__button.md-logo > img{
     height: 30px !important;
 } */
-.navheader > div.md-flex__cell:first-of-type {
+/* .navheader > div.md-flex__cell:first-of-type {
     background-color: #ffffff!important;
     height: inherit!important;
-}
+} */
 .underline {
   text-decoration: underline;
 }

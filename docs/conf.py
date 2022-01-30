@@ -57,17 +57,15 @@ html_theme = 'sphinx_material'
 html_logo = './_static/img/logo_header.jpg'
 html_favicon = './_static/img/favicon.ico'
 # Set link name generated in the top bar.
-# html_title = 'Cyber Triage'
+html_title = 'CYBER TRIAGE'
 # Material theme options (see theme.conf for more information)
 html_theme_options = {
-    # Set the name of the project to appear in the navigation.
-   #  'nav_title': 'Cyber Triage',
     # Specify a base_url used to generate sitemap.xml. If not
     # specified, then no sitemap will be built.
     'base_url': 'https://project.github.io/project',
     # Set the color and the accent color
-    'color_primary': 'indigo',
-    'color_accent': 'green',
+    'color_primary': 'blue',
+    'color_accent': 'light-blue',
     # Set the repo location to get a badge with stats
     'repo_url': 'https://github.com/iSOLveIT/cyber_triage',
     'repo_name': 'Cyber Triage',
@@ -79,7 +77,7 @@ html_theme_options = {
     'globaltoc_includehidden': True,
     'html_minify': True,
     'css_minify': True,
-    'theme_color': '#3f51b5'
+    'theme_color': '021329'
 }
 html_sidebars = {
     "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]
