@@ -19,13 +19,7 @@ p.centered{
 .md-header-nav__button.md-logo{
     padding: 0.2rem!important;
 }
-/* .md-header-nav__button.md-logo > img{
-    height: 30px !important;
-} */
-/* .navheader > div.md-flex__cell:first-of-type {
-    background-color: #ffffff!important;
-    height: inherit!important;
-} */
+
 .underline {
   text-decoration: underline;
 }
