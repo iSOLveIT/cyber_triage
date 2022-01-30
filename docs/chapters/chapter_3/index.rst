@@ -3,30 +3,17 @@
 Analyzing The Session Data
 ==========================
 
-<<<<<<< HEAD
 Once you have added data to |cyTriage| from one of the collection methods previously listed, then analysis begins.  
 Your goal during this process is to review the data to make a conclusion about if the system is compromised and how badly.  
 |cyTriage| will help you as much as possible.
-=======
-Once you have added data to Cyber Triage from one of the collection methods previously listed, then analysis begins.  
-Your goal during this process is to review the data to make a conclusion about if the system is compromised and how badly.  
-Cyber Triage will help you as much as possible.
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 
 Threat Scores
 -------------
 
-<<<<<<< HEAD
 As data comes in from the remote host, file, or disk image, |cyTriage| will start to analyze it and assign a score: 
 
 * **Bad**: The item is believed to be bad because several malware scanners thought so, it is on a bad list, the user manually identified it, or some other low false positive-based approach.
 * **Suspicious**: The item has characteristics that make it anomalous or similar to what is seen during an attack. The approaches used to identify these items have false positives and |cyTriage| is going to need you to make the final decision.
-=======
-As data comes in from the remote host, file, or disk image, Cyber Triage will start to analyze it and assign a score: 
-
-* **Bad**: The item is believed to be bad because several malware scanners thought so, it is on a bad list, the user manually identified it, or some other low false positive-based approach.
-* **Suspicious**: The item has characteristics that make it anomalous or similar to what is seen during an attack. The approaches used to identify these items have false positives and Cyber Triage is going to need you to make the final decision.
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 * **Good**: The item was part of a hash database of known items, part of a Good List, or the user manually identified it as good. This score is for items that are OK and not associated with an attack. 
 * **Unknown**: No score was assigned to the item. 
   
@@ -36,11 +23,7 @@ You can also review the other items.
 Interface Overview and Workflow
 -------------------------------
 
-<<<<<<< HEAD
 When |cyTriage| starts, you'll see the Dashboard that displays the number of Bad and Suspicious items, 
-=======
-When Cyber Triage starts, you'll see the Dashboard that displays the number of Bad and Suspicious items, 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 the number of background tasks, and other general session information. 
 
 .. figure:: /_static/img/chapter_3/3_1.jpg
@@ -86,11 +69,7 @@ When you select an item in the table, you can choose to change its score in the 
 
 * Bad: Use this score if you know the item is related to an incident and want it to be reported on.
 * Suspicious: Use this score if you want to make sure you review it again in the future. This can be used as a bookmark for your workflow.
-<<<<<<< HEAD
 * Good: Use this score if |cyTriage| marked and item as Good or Suspicious and you want to override that score because you know it is not related to an incident. 
-=======
-* Good: Use this score if Cyber Triage marked and item as Good or Suspicious and you want to override that score because you know it is not related to an incident. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
   
 If the item is initially Suspicious, you can change the score to Bad if it is in fact bad or mark it as Good if it was a false positive. 
 Changing a Suspicious item to Good or Bad will decrease the number of suspicious items listed on the dashboard and the counters on the left-hand menu. 
@@ -131,11 +110,7 @@ If you would rather not use the mouse and prefer keyboard shortcuts, you can als
 Marking Related Items as Suspicious
 -----------------------------------
 
-<<<<<<< HEAD
 When you change the score of an item to Bad or Suspicious, |cyTriage| will identify other items that are related and allow you to mark any as suspicious. 
-=======
-When you change the score of an item to Bad or Suspicious, Cyber Triage will identify other items that are related and allow you to mark any as suspicious. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 The idea is that you may find these other items interesting and you should follow up on them.  
 You will get a dialog such as this:
 
@@ -168,23 +143,14 @@ If it is, mark it as **Good** and consider adding it to a Global Good List.
 Analysis Techniques
 -------------------
 
-<<<<<<< HEAD
 There are a variety of analysis techniques that |cyTriage| uses to identify suspicious data. 
-=======
-There are a variety of analysis techniques that Cyber Triage uses to identify suspicious data. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 This section outlines some that you may encounter the most. These are not used in the free Lite mode. 
 
 Executable Analysis
 ^^^^^^^^^^^^^^^^^^^
 
-<<<<<<< HEAD
 As previously described in :ref:`Section 2 <CDRH>`, |cyTriage| uses ReversingLabs to analyze executables for malware.  
 If you configured the session to upload file content and/or MD5 values, then |cyTriage| will know the malware results from many scanners. 
-=======
-As previously described in :ref:`Section 2 <CDRH>`, Cyber Triage uses ReversingLabs to analyze executables for malware.  
-If you configured the session to upload file content and/or MD5 values, then Cyber Triage will know the malware results from many scanners. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 
 Scores are assigned based on ReversingLabs's proprietary algorithms that combine results from many scanning engines as well as their own techniques. 
 
@@ -194,15 +160,9 @@ Yara Signatures
 ^^^^^^^^^^^^^^^
 
 Yara signatures are a way that malware researchers share signatures about malicious files. 
-<<<<<<< HEAD
 |cyTriage| can use a set of rules to analyze the collected files. Files that match a rule will be scored as **Bad**. 
 
 |cyTriage| uses **libyara 3.8.1**. Documentation can be found at: 
-=======
-Cyber Triage can use a set of rules to analyze the collected files. Files that match a rule will be scored as **Bad**. 
-
-Cyber Triage uses **libyara 3.8.1**. Documentation can be found at: 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 `<https://yara.readthedocs.io/en/v3.8.1/>`_
 
 Adding Yara Files
@@ -218,15 +178,9 @@ You can find that folder by going to the Options panel.
    *Options Panel*
 
 The default path is ``%localappdata%\cybertriage\config\yara_rules``. 
-<<<<<<< HEAD
 However, this location is can be changed by changing the data folder location in the |cyTriage| options panel. 
 
 |cyTriage| will not search sub directories for Yara files. 
-=======
-However, this location is can be changed by changing the data folder location in the Cyber Triage options panel. 
-
-Cyber Triage will not search sub directories for Yara files. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 If you would like to organize your Yara rules with sub directories, then you'll need to have a Yara file in the root directory that uses an include statements to refer to the other files. 
 
 .. note::
@@ -238,19 +192,11 @@ If you would like to organize your Yara rules with sub directories, then you'll 
 Scanning Files
 ++++++++++++++
 
-<<<<<<< HEAD
 Each time a session is ingested or a Yara rescan is initiated |cyTriage| will take all ``.yar`` files in the above folder and compile them into a single compiled Yara file. 
 
 |cyTriage| will use that rule against each file that has not already been marked as Bad by malware scanning. 
 
 If a rule matches a file, then the rule name will be specified in the |cyTriage| score. 
-=======
-Each time a session is ingested or a Yara rescan is initiated Cyber Triage will take all ``.yar`` files in the above folder and compile them into a single compiled Yara file. 
-
-Cyber Triage will use that rule against each file that has not already been marked as Bad by malware scanning. 
-
-If a rule matches a file, then the rule name will be specified in the Cyber Triage score. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 
 Memory Images
 +++++++++++++
@@ -270,11 +216,7 @@ When running in a Team environment, processing happens in different locations de
 Bad Lists
 ^^^^^^^^^
 
-<<<<<<< HEAD
 |cyTriage| ships with some basic programs and file names on its default Bad List that will cause files to be marked as **Bad**. 
-=======
-Cyber Triage ships with some basic programs and file names on its default Bad List that will cause files to be marked as **Bad**. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 You can expand this list based on your threat intelligence. See :ref:`Section 5.1 <ADT>` for details. 
 
 Country Resolution
@@ -286,17 +228,10 @@ There should either be a column in each relevant table with this data or it is a
 Dynamic DNS
 ^^^^^^^^^^^
 
-<<<<<<< HEAD
 |cyTriage| will mark hostnames as suspicious if they are part of a dynamic DNS setup, which can be used by malware to avoid network-based detection. 
 If a hostname uses dynamic DNS, then it will be marked as Suspicious. 
 
 |cyTriage| ships with a set of Dynamic DNS providers that it will detect. 
-=======
-Cyber Triage will mark hostnames as suspicious if they are part of a dynamic DNS setup, which can be used by malware to avoid network-based detection. 
-If a hostname uses dynamic DNS, then it will be marked as Suspicious. 
-
-Cyber Triage ships with a set of Dynamic DNS providers that it will detect. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 You can add more providers by going to **Options**, **Dynamic DNS**.
 The domains hosted by dynamic DNS providers are detected using the DNS server for the domain. 
 To add a provider, you add the DNS server names.
@@ -310,11 +245,7 @@ To add a provider, you add the DNS server names.
 Ransomware
 ^^^^^^^^^^
 
-<<<<<<< HEAD
 |cyTriage| has several ransomware-specific detection techniques. 
-=======
-Cyber Triage has several ransomware-specific detection techniques. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 Ransomware incidents are much like any other incident where attackers laterally move through an environment, but the difference is on their final action (where they encrypt the data instead of just stealing it). 
 
 The ransomware-specific techniques include:
@@ -323,24 +254,14 @@ The ransomware-specific techniques include:
 * Detection of possible ransomware notes based on heuristics
 * Detection of data recovery techniques disabling, such as Volume Shadow and Microsoft Backup
   
-<<<<<<< HEAD
 |cyTriage| focuses on making sure you quickly determine when the encryption started so that you can work backwards to determine how ransomware was deployed.  
 
 |cyTriage| does not have decryption features.
-=======
-Cyber Triage focuses on making sure you quickly determine when the encryption started so that you can work backwards to determine how ransomware was deployed.  
-
-Cyber Triage does not have decryption features.
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 
 Data Types
 ----------
 
-<<<<<<< HEAD
 We will not review the types of data that |cyTriage| collected. 
-=======
-We will not review the types of data that Cyber Triage collected. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 The data types on the left hand side are organized by user-oriented data and malware-oriented data. 
 
 Accounts
@@ -379,20 +300,12 @@ The rows in this table are grouped by the remote host and have columns for local
 For each remote host, you can use the bottom tabs to identify when the connection happened, details about the user, etc.
 
 **What Should You Do**: Review this data to look for suspicious hosts, users, and times. 
-<<<<<<< HEAD
 |cyTriage| may mark some of them as being suspicious and you should review those and others to identify them as Good or Bad. 
-=======
-Cyber Triage may mark some of them as being suspicious and you should review those and others to identify them as Good or Bad. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 
 Observed Actions
 ++++++++++++++++
 
-<<<<<<< HEAD
 As |cyTriage| is parsing data from the target system, it keeps track of how various user accounts were used.  
-=======
-As Cyber Triage is parsing data from the target system, it keeps track of how various user accounts were used.  
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 You can then filter based on those **Observed Actions**
 
 .. figure:: /_static/img/chapter_3/3_10.jpg
@@ -401,13 +314,8 @@ You can then filter based on those **Observed Actions**
 
    *Filter Observed Actions*
 
-<<<<<<< HEAD
 * Interactive Login or Program Run: |cyTriage| found evidence that the user had a local or remote interactive login with the system or launched a program (locally or remotely) on the system. 
 * File or Service Access: |cyTriage| found evidence that the user interacted with a file or service on the system. Examples include accessing a file share or owning a file that got copied to the system. 
-=======
-* Interactive Login or Program Run: Cyber Triage found evidence that the user had a local or remote interactive login with the system or launched a program (locally or remotely) on the system. 
-* File or Service Access: Cyber Triage found evidence that the user interacted with a file or service on the system. Examples include accessing a file share or owning a file that got copied to the system. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 * Referenced: There was a reference to the user on the system, perhaps in an event log or registry, but no evidence was found of them doing anything on this specific system. Examples include accounts that were created and never used or entries in a log server. 
 
 When looking at a domain controller and who had access to it, you can focus on accounts with **Interactive Logins**
@@ -444,19 +352,11 @@ This is based on registry data and other system configurations.
 
 There are a lot of programs that are run on the system and this section can be quite overwhelming. 
 You want to be looking for malicious programs that were run by an authorized or unauthorized user.  
-<<<<<<< HEAD
 |cyTriage| will group these rows based on naming patterns that we have found for many programs, such as having a version number as a folder. 
 
 Filtering options on the top you to focus on just the suspicious items, which are those running from temporary folders and folders that should contain only data files. 
 Many of the items in this list will be for deleted files that no longer have content or come from programs that use a consistent naming convention. 
 |cyTriage| allows you to filter out the items without content and will group items based on similar names. 
-=======
-Cyber Triage will group these rows based on naming patterns that we have found for many programs, such as having a version number as a folder. 
-
-Filtering options on the top you to focus on just the suspicious items, which are those running from temporary folders and folders that should contain only data files. 
-Many of the items in this list will be for deleted files that no longer have content or come from programs that use a consistent naming convention. 
-Cyber Triage allows you to filter out the items without content and will group items based on similar names. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 
 **What Should You Do**: Review the items and identify the programs that are bad or suspicious based on their path and malware results.  
 In a corporate environment, you may find it useful to add the events that are known and common to a Good List. 
@@ -587,11 +487,7 @@ Analysis Views
 --------------
 
 An alternative way of looking at the collected data is by date or file system location. 
-<<<<<<< HEAD
 |cyTriage| supports both of these views. 
-=======
-Cyber Triage supports both of these views. 
->>>>>>> ecdce2520bf3095322e3b198514739aeb4e4dd69
 
 Timeline
 ^^^^^^^^
