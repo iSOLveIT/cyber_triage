@@ -107,8 +107,6 @@ rst_epilog = """
 
 html_last_updated_fmt = '%b %d, %Y'
 
-# tablecaption = 'below'
-
 pygments_style = 'sphinx'
 
 # PDF output

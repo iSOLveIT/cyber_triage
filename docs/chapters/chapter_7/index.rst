@@ -59,7 +59,7 @@ Software Requirements
 
 
 * `Cyber Triage <https://www.cybertriage.com/download-eval/>`_ MSI installer.
-* :download:`PSExec 2.2 <https://download.sysinternals.com/files/PSTools.zip>` (or newer) if you want to push the collection tool to remote hosts over the network.
+* `PSExec 2.2 <https://download.sysinternals.com/files/PSTools.zip>`_ (or newer) if you want to push the collection tool to remote hosts over the network.
 * Download `PostgreSQL 13 <https://www.postgresql.org/download/>`_ if you are going to use PostgreSQL instead of SQLite
   
 Hardware Requirements
