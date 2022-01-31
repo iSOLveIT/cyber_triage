@@ -90,7 +90,7 @@ You do not need to use StackBuilder if it prompts you to. |br|
 
 At the end of the Windows installer process, PostgreSQL will be running as a service as the **Network Service** account.
 
-If you wanted to test the PostgreSQL speed as outlined in `Section 7.1.1 <#testing-postgreSQL-speed>`_, you can do that now before doing further configuration. 
+If you wanted to test the PostgreSQL speed as outlined in `Section 7.1.1 <#testing-postgresql-speed>`_, you can do that now before doing further configuration. 
 
 PostgreSQL Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^
