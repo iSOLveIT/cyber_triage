@@ -23,8 +23,8 @@ from datetime import datetime as dt
 project = 'Cyber Triage'
 copyright = f"{dt.now().year}, Basis Technology"
 author = 'Basis Technology'
-version = '3.0'
-release = '3.0.3'
+version = '4.0'
+release = '4.0.0'
 
 
 # -- General configuration ---------------------------------------------------
